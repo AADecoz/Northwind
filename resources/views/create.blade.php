@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title')
+    Create
+@endsection
+
 @section('content')
 
     <style>
@@ -26,7 +30,7 @@
                     </ul>
                 </div><br />
             @endif
-                <form method="post" action>
+                <form method="post" action="{{ route('customer.store') }}">
                     @csrf
                     <!-- 2 column grid layout with text inputs for the first and last names -->
                     <div class="row mb-4">
@@ -75,19 +79,19 @@
 {{--                    </div>--}}
 
                     <!-- Checkbox -->
-                    <div class="form-check d-flex justify-content-center mb-4">
-                        <input
-                            class="form-check-input me-2"
-                            type="checkbox"
-                            value=""
-                            id="form6Example8"
-                            checked
-                        />
-                        <label class="form-check-label" for="form6Example8"> Create an account? </label>
-                    </div>
+{{--                    <div class="form-check d-flex justify-content-center mb-4">--}}
+{{--                        <input--}}
+{{--                            class="form-check-input me-2"--}}
+{{--                            type="checkbox"--}}
+{{--                            value=""--}}
+{{--                            id="form6Example8"--}}
+{{--                            checked--}}
+{{--                        />--}}
+{{--                        <label class="form-check-label" for="form6Example8"> Create an account? </label>--}}
+{{--                    </div>--}}
 
                     <!-- Submit button -->
-                    <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Approve Customer</button>
                 </form>
         </div>
     </div>

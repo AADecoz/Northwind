@@ -58,7 +58,7 @@ class CustomerController extends Controller
         ]);
         $customer = Customer::create($storeData);
 
-        return redirect('/customers')->with('completed', 'custoemr saved');
+        return redirect('/customers')->with('completed', 'customer saved');
     }
 
     /**

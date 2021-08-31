@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('title')
+    Customers
+@endsection
+
 @section('content')
 
     <style>
@@ -7,6 +11,9 @@
             margin-top: 50px;
         }
     </style>
+<div>
+    <a href="{{ route('customer.create')}}"><button class="btn btn-primary">Create New User</button></a>
+</div>
 
     <div class="push-top">
         @if(session()->get('success'))

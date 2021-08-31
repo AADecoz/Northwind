@@ -46,8 +46,8 @@
                 <!-- Navbar brand -->
                 <a class="navbar-brand mt-2 mt-lg-0" href="#">
                     <img
-                        src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
-                        height="15"
+                        src="/img/logo/Medideck.png"
+                        height="30"
                         alt=""
                         loading="lazy"
                     />
